@@ -1,6 +1,6 @@
 [package]
 name = "shreddit"
-version = "1.1.8"
+version = "1.1.9"
 edition = "2024"
 authors = ["Andrew Banchich <crates-io@andrew.banchi.ch>"]
 description = "Overwrite and delete your Reddit account history."
@@ -10,10 +10,10 @@ repository = "https://github.com/andrewbanchich/shreddit"
 [dependencies]
 async-stream = "0.3.6"
 async-trait = "0.1.89"
-clap = { version = "4.5.57", features = ["derive", "env"] }
+clap = { version = "4.5.60", features = ["derive", "env"] }
 csv = "1.4.0"
 dotenvy = "0.15.7"
-futures-core = "0.3.31"
+futures-core = "0.3.32"
 futures-util = "0.3.28"
 reqwest = { version = "0.12.28", default-features = false, features = [
     "json",
@@ -25,5 +25,5 @@ serde_json = "1.0.149"
 tokio = { version = "1.49.0", features = ["rt", "macros"] }
 tracing = "0.1.44"
 tracing-subscriber = { version = "0.3.22", features = ["fmt", "env-filter"] }
-parse_datetime = "0.13.3"
-jiff = { version = "0.2.19", features = ["serde"] }
+parse_datetime = "0.14.0"
+jiff = { version = "0.2.22", features = ["serde"] }
